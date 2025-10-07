@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheap and Best.com</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #d8f3dc; /* mild green */
+      color: #333;
+    }
+
+    header {
+      background-color: #74c69d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    header img {
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #95d5b2;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004b23;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: block;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #081c15;
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #b7e4c7;
+      min-width: 180px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 1;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a {
+      padding: 10px;
+      color: #004b23;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #95d5b2;
+    }
+
+    nav ul li:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Main content */
+    .container {
+      padding: 40px;
+    }
+
+    h2 {
+      color: #1b4332;
+      border-bottom: 3px solid #74c69d;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .category {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      padding: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #74c69d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    a.shop {
+      background-color: #74c69d;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    a.shop:hover {
+      background-color: #52b788;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Logo" />
+    Cheap and Best.com
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <li>
+        <a href="#">Electronics ?</a>
+        <div class="dropdown-content">
+          <a href="#mobiles">Mobiles</a>
+          <a href="#gaming">Gaming Mobiles</a>
+          <a href="#camera">Camera Mobiles</a>
+          <a href="#laptops">Laptops</a>
+          <a href="#appliances">Home Appliances</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#">Dresses ?</a>
+        <div class="dropdown-content">
+          <a href="#mens">Mens Wear</a>
+          <a href="#womens">Womens Wear</a>
+        </div>
+      </li>
+
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Electronics -->
+    <section id="electronics">
+      <h2>Electronic Gadgets</h2>
+      <div class="category">
+
+        <div class="card" id="mobiles">
+          <img src="https://images.unsplash.com/photo-1510557880182-3b1da03ffd9d" alt="Mobiles">
+          <h3>Mobiles</h3>
+          <p>Latest mobiles with great deals for all budgets.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+        <div class="card" id="gaming">
+          <img src="https://images.unsplash.com/photo-1606813902916-6a3d8f4f7d2c" alt="Gaming Mobiles">
+          <h3>Gaming Mobiles</h3>
+          <p>High-performance smartphones made for gamers.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+        <div class="card" id="camera">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Camera Mobiles">
+          <h3>Camera Mobiles</h3>
+          <p>Top camera phones for photography lovers.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+        <div class="card" id="laptops">
+          <img src="https://images.unsplash.com/photo-1587825140708-6c88f1468b47" alt="Laptops">
+          <h3>Laptops</h3>
+          <p>Affordable and powerful laptops for work and play.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+        <div class="card" id="appliances">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Home Appliances">
+          <h3>Home Appliances</h3>
+          <p>Smart and stylish appliances for your home.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <br><br>
+
+    <!-- Dresses -->
+    <section id="dresses">
+      <h2>Dresses</h2>
+      <div class="category">
+
+        <div class="card" id="mens">
+          <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3e9f" alt="Mens Wear">
+          <h3>Mens Wear</h3>
+          <p>Trendy outfits for every occasion.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+        <div class="card" id="womens">
+          <img src="https://images.unsplash.com/photo-1534126511673-b6899657816a" alt="Womens Wear">
+          <h3>Womens Wear</h3>
+          <p>Elegant styles for women — comfort meets fashion.</p>
+          <a href="#" class="shop">Shop Now</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Cheap and Best.com | Designed for Affiliate Marketing
+  </footer>
+
+</body>
+</html>
